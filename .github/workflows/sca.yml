@@ -20,10 +20,10 @@ jobs:
         run: npm install
 
       - name: Run SCA
-        run: npm audit 
+        run: npm audit | exit 1
 
       - name: Fix vulnerabilities
-        run: npm audit fix --force
+        run: npm audit fix --force | exit 1
 
       - name: Build application
         run: npm run build
