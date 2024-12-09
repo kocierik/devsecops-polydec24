@@ -25,8 +25,8 @@ jobs:
 
       - name: Fix vulnerabilities
         run: |
-          npm audit fix --force || echo "vulnerabilities could not be fixed automatically."
-
+          npm audit fix --force
+          
       - name: Build application
         run: npm run build
 
