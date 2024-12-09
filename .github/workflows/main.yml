@@ -1,0 +1,17 @@
+ name: Hello World CI
+
+ on:
+   push:
+     branches:
+       - main
+
+ jobs:
+   build:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: Get Your Code
+         uses: actions/checkout@v2
+
+       - name: echo the content of hello_world.txt
+         run: cat hello_world.txt
