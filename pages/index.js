@@ -3,8 +3,6 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
-const PASSWORD = "aSuperSecretPassword"
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,8 +16,8 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
 
-       <h1>Congratulations!</h1>
-  <p>You've completed the essentials of automated application deployment with GitHub Actions! 🥳</p>
+        <h1>Congratulations!</h1>
+        <p>You've completed the essentials of automated application deployment with GitHub Actions! 🥳</p>
 
       </main>
     </>
